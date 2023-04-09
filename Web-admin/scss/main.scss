@@ -1,0 +1,328 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+
+$colores:(
+    "rosa": #E21982,
+    "azul-oscuro": #22193F,
+    "gris": #E8E8E8,
+    "blanco": #fff,
+    "negro": #000,
+);
+
+$fontFamily:(
+    "nunito": 'Nunito',
+);
+
+$fontSize:(
+    "titulo-banner-principal": 2.5rem,
+    "titulo-banner-secundario": 1.375rem,
+    "titulo-secundario": 1.75rem,
+    "pre-titulos": 0.75rem,
+    "texto": 1rem,
+    "titulo-ayuda": 1.4375rem,
+    "botones": 1rem,
+    "footer": 0.875rem,
+    "copyright":  0.75rem,
+);
+
+$fuentes:(
+    "titulos": 900,
+    "link-botones": 700,
+    "pre-titulos": 200,
+    "general": 400,
+    "preguntaFAQS": 700,
+);
+// font-family: 'Nunito', sans-serif;
+// font-family: 'Open Sans', sans-serif;
+
+// Fuentes:
+// ○ Títulos: Nunito Black
+// ○ Enlaces y botones: Nunito Bold
+// ○ Pre – Títulos: Nunito Extra Light
+// ○ Texto general: Open Sans Regular
+// ○ Título de pregunta en FAQS: Open Sans Bold
+
+
+// ○ Título banner principal: 40px
+// ○ Bajada banner principal: 22px
+// ○ Títulos secundarios: 28px
+// ○ Pre Títulos: 12px
+// ○ Texto general: 16px
+// ○ Título “Si brindas ayuda y te interesa sumarte”: 23px
+// ○ Botones: 16px
+// ○ Footer: 14px
+// ○ Copyright: 12px
+
+// Rosa: #E21982
+// ○ Azul oscuro en los textos y footer: #22193F
+// ○ Gris: #E8E8E8
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    font-family: 'Open Sans', sans-serif;
+    width: 100vw;
+
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+
+    background-color: map-get($colores, "blanco");
+}
+
+.img{
+    width: 80%;
+}
+
+//Sección 1
+.nav{
+    text-align: center;
+
+    &__link{
+        color: map-get($colores, "azul-oscuro");
+
+        font-size: map-get($fontSize, "botones");
+        font-family: map-get($fontFamily, "nunito");
+        font-weight: map-get($fuentes, "link-botones");
+    }
+        &__link:hover{
+            color: map-get($colores, "rosa");
+        }
+    &__login{
+        padding: 0 1em;
+        border-radius: 20px;
+        border: 1px solid transparent;
+
+        
+        background-color: map-get($colores, 
+        "rosa");
+
+        font-size: map-get($fontSize, "botones");
+        font-family: map-get($fontFamily, "nunito");
+        font-weight: map-get($fuentes, "link-botones");
+
+       
+    }
+        &__login:hover{
+        border: 1px solid map-get($colores, "rosa");
+
+        color: rgb(252, 19, 139);
+        background-color: transparent;
+        }
+        &__login:hover &__login--link{
+            color: rgb(252, 19, 139);
+        }
+    &__login--link{
+        color: map-get($colores, "blanco");
+    }
+}
+
+.section-2{
+    width: 100%;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #764dff;
+
+    &__h1{
+        color: map-get($colores, "blanco");
+
+        font-size: map-get($fontSize, "titulo-banner-principal");
+        font-family: map-get($fontFamily, "nunito");
+        font-weight: map-get($fuentes, "titulos")
+    }
+    &__p{
+        max-width: 25rem;
+        margin-left: auto;
+        margin-right: auto;
+
+        color: map-get($colores, "blanco");
+
+        font-size: map-get($fontSize, "texto");
+        font-family: map-get($fontFamily, "nunito");
+        font-weight: map-get($fuentes, "general");
+    }   
+}
+
+.banner__button{
+    padding: 0.5em 1em;
+    border-radius: 20px;
+
+    color: map-get($colores, "blanco");
+    background-color: map-get($colores, "rosa");
+
+    font-size: map-get($fontSize, "botones");
+    font-family: map-get($fontFamily, "nunito");
+    font-weight: map-get($fuentes, "link-botones")
+}
+.banner__button:hover{
+    border: 1px solid map-get($colores, "rosa");
+
+    color: rgb(252, 19, 139);
+}
+//Pre titulo que contienen la seccion 3, 4 y 5;
+.pre-titulo{
+    color: map-get($colores, "rosa");
+
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-family: map-get($fontFamily, "nunito");
+    font-size: map-get($fontSize, "pre-titulos");
+    font-weight: map-get($fuentes, "pre-titulos")
+}
+
+
+.section-3{
+    background-color: map-get($colores, "gris");
+
+    font-family: map-get($fontFamily, "nunito");
+    &__p{
+        color: map-get($colores, "azul-oscuro");
+
+        font-size: map-get($fontSize, "general");
+        font-weight: map-get($fuentes, "general")
+    }
+}
+
+.section__h2{
+    margin-top: -1rem;
+
+    color: map-get($colores, "azul-oscuro");
+
+    font-size: map-get($fontSize, "titulo-secundario");
+    font-weight: map-get($fuentes, "titulos");
+    white-space: nowrap;
+
+
+}
+.section-4{
+    background-color: map-get($colores, "blanco");
+
+    &__h3{
+        color: map-get($colores, "rosa");
+
+        font-size: map-get($fontSize, "titulo-secundario");
+        font-weight: map-get($fuentes, "titulos")
+    };
+    &__p{
+        color: map-get($colores, "azul-oscuro");
+
+        font-size: map-get($fontSize, "texto");
+        font-weight: map-get($fuentes, "general")
+    };
+}
+.subsection-4{
+    background-color: map-get($colores, "rosa");
+
+    font-family: map-get($fontFamily, "nunito");
+
+    &__h3{
+        color: map-get($colores, "blanco");
+        font-size: map-get($fontSize, "titulo-ayuda");
+        font-weight: map-get($fuentes, "titulos")
+    }
+    &__button{
+        border: 1px solid map-get($colores, "blanco");
+        border-radius: 20px;
+
+        color: map-get($colores, "blanco");
+
+        font-size: map-get($fontSize, "botones");
+        font-weight: map-get($fuentes, "link-botones");
+    }
+    &__button:hover{
+        color: map-get($colores, "blanco");
+
+        border: 1px solid map-get($colores, "blanco");
+        border-radius: 20px;
+        box-shadow: -2px -2px 5px rgb(255 255 255 / 0.4);  
+    }
+}
+
+.section-5{
+    background-color: map-get($colores, "gris");
+
+    &__accordion-item{
+        margin-bottom: 0.5rem;
+    }
+    &__button{
+        color: map-get($colores, "azul-oscuro");
+
+        font-family: map-get($fontFamily, "nunito");
+        font-size: map-get($fontSize, "texto");
+        font-weight: map-get($fuentes, "link-botones");
+    }
+    &__button::after{
+        filter: invert(30%) sepia(74%) saturate(6944%) hue-rotate(315deg) brightness(90%) contrast(96%);
+    }
+   
+}
+.subsection-5{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-6{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__h2{
+        color: map-get($colores, "blanco");
+        
+        font-size: map-get($fontSize, "titulo-secundario");
+        font-family: map-get($fontFamily, "nunito");
+        font-weight: map-get($fuentes, "titulos")
+    }
+    &__button{}
+}
+
+.section-7{
+    background-color: map-get($colores, "azul-oscuro");
+
+    &__footer{
+        color: map-get($colores, "blanco");
+    
+    }
+    &__link{
+        color: map-get($colores, "blanco");
+        
+        font-size: map-get($fontSize, "footer");
+    }
+    &__link:hover{
+        color: map-get($colores, "rosa");
+    }
+    
+    &__icon{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+
+        width: 1.7em;
+        height: 1.7em;
+
+        border-radius: 50%;
+
+
+        background-color: map-get($colores, "rosa");
+    }
+        
+    &__icon a img{
+        width: 1.7rem;
+        height: 1.7rem;
+
+        border-radius: 50%;
+    }
+        
+
+    &__p{
+        color: map-get($colores, "blanco");
+        font-size: map-get($fontSize, "copyright");
+    }
+}
