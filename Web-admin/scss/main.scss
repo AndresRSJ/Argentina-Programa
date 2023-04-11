@@ -1,7 +1,5 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
-
-
 $colores:(
     "rosa": #E21982,
     "azul-oscuro": #22193F,
@@ -72,10 +70,6 @@ $fuentes:(
     padding-right: 0;
 
     background-color: map-get($colores, "blanco");
-}
-
-.img{
-    width: 80%;
 }
 
 //Sección 1
