@@ -1,0 +1,122 @@
+
+
+.news{
+    padding: 0.2rem 0.4rem;
+
+    background-color: rgb(173, 173, 255);
+    border: 3px solid rgb(84, 84, 255);
+    border-radius: 12px;
+}
+.title{
+    color: white;
+
+}
+.description{
+    font-family: Verdana;
+
+    font-size: 1rem;
+}
+.buttons{
+    padding: 0.2em 0.4em;
+    margin-bottom: 1rem;
+
+    background-color: rgb(72, 72, 255);
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 12px;
+
+    text-align: center;
+}
+.button-news{
+    padding: 0.2rem 0.5rem;
+
+    background-color: rgb(255, 182, 55);
+    color: white;
+    border-radius: 7px;
+    
+    cursor: pointer;
+}
+
+/*tamaños de fuentes*/
+
+.f1{
+    font-size: 0.8rem;
+}
+.f2{
+    font-size: 0.9rem;
+}
+.f3{
+    font-size: 1rem;
+}
+.f4{
+    font-size: 1.1rem;
+}
+.f5{
+    font-size: 1.3rem;
+}
+
+
+.container{
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+    background-color: plum;
+
+    text-align: center;
+}
+.container__btn{
+    padding: 0.2rem 0.4rem;
+
+    box-shadow: 2px 2px 4px rgb(0 0 0, 0.4);
+    border-radius: 6px;
+}
+.container__btn--insta{
+    background-color: rgb(255, 212, 55);
+}
+.container__btn--yt{
+    background-color: rgb(255, 52, 52);
+}
+
+.container__btn--twitch{
+    background-color: rgb(150, 37, 255);
+}
+
+.container__p--strong{
+    cursor: pointer;
+}
+
+.ocultText{
+    opacity: 0;
+}
+
+
+.container__box{
+    width: 50rem;
+    height: 4.375rem;
+
+    text-align: center;
+
+    background-color: seagreen;
+}
+
+.redimension{
+    width: 15.625rem;
+    height: 15.625rem;
+}
+
+.container__link{
+    font-size: 1.1rem;
+}
+
+.form{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.form-mensaje{
+    font-size: 1.2rem;
+
+    color: rgb(255, 255, 255);
+}
